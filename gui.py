@@ -5,3 +5,5 @@ root = Tk()
 firstLabel = Label(root, text="Hello World!")
 
 firstLabel.pack()
+
+root.mainloop()
