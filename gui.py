@@ -7,8 +7,8 @@ secondLabel = Label(root, text="I like puppies!")
 
 # firstLabel.pack()
 
-firstLabel.grid()
-secondLabel.grid()
+firstLabel.grid(row=0, column=0)
+secondLabel.grid(row=1, column=0)
 
 
 root.mainloop()
