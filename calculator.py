@@ -40,6 +40,11 @@ button_add = Button(root, text="+", padx=39, pady=20, command=button_add)
 button_equal = Button(root, text="=", padx=91, pady=20, command=button_equal)
 button_clear = Button(root, text="Clear", padx=79, pady=20, command=button_clear)
 
+button_subtract = Button(root, text="-", padx=39, pady=20, command=button_add)
+button_multply = Button(root, text="x", padx=39, pady=20, command=button_add)
+button_divide = Button(root, text="/", padx=39, pady=20, command=button_add)
+
+
 # Put buttons on the screen
 
 button_1.grid(row=3, column=0)
