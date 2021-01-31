@@ -26,6 +26,15 @@ def button_equal():
 	e.delete(0,END)
 	e.insert(0,f_num + int(second_num))
 
+def button_subtract():
+	pass
+
+def button_multiply():
+	pass
+
+def button_divide():
+	pass
+
 button_1 = Button(root, text="1", padx=40, pady=20, command=lambda:button_click(1))
 button_2 = Button(root, text="2", padx=40, pady=20, command=lambda:button_click(2))
 button_3 = Button(root, text="3", padx=40, pady=20, command=lambda:button_click(3))
@@ -58,11 +67,11 @@ button_8.grid(row=1, column=1)
 button_9.grid(row=1, column=2)
 button_0.grid(row=4, column=0)
 button_add.grid(row=5, column=0)
-button_equal.grid(row=4, column=1, columnspan=2)
-button_clear.grid(row=5, column=1, columnspan=2)
+button_equal.grid(row=5, column=1, columnspan=2)
+button_clear.grid(row=6, column=1, columnspan=2)
 
 button_subtract.grid(row=6, column=0)
-button_multiply.grid(row=6, column=1)
-button_divide.grid(row=6, column=2)
+button_multiply.grid(row=4, column=1)
+button_divide.grid(row=4, column=2)
 
 root.mainloop()
