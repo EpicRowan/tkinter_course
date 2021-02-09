@@ -1,5 +1,6 @@
 from tkinter import *
 from PIL import ImageTk,Image
+import sqlite3
 
 root = Tk()
 
@@ -17,6 +18,7 @@ def open():
 
 btn = Button(root, text="Enter Shrimp data", command=open).pack()
 
-
+#database
+conn = sqlite3.connect('first_attempt.db')
 
 mainloop()
