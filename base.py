@@ -20,5 +20,19 @@ btn = Button(root, text="Enter Shrimp data", command=open).pack()
 
 #database
 conn = sqlite3.connect('first_attempt.db')
+c = conn.cursor()
+
+#tables
+
+c.execute("""
+	
+
+
+	""")
+
+
+conn.commit()
+conn.close()
+
 
 mainloop()
