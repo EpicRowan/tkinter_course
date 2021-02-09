@@ -3,6 +3,10 @@ from PIL import ImageTk,Image
 
 root = Tk()
 
+vertical = Scale(root, from_=0, to=200)
+vertical.pack()
+
+
 def open():
 	global my_img
 	top = Toplevel()
@@ -12,5 +16,7 @@ def open():
 
 
 btn = Button(root, text="Enter Shrimp data", command=open).pack()
+
+
 
 mainloop()
