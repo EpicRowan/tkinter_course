@@ -24,10 +24,11 @@ c = conn.cursor()
 
 #tables
 
-c.execute("""
-	
-
-
+c.execute("""CREATE TABLE addresses (
+	first_name text,
+	last_name text,
+	zipcode integer
+)
 	""")
 
 
