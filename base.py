@@ -32,13 +32,23 @@ c = conn.cursor()
 # 	""")
 
 f_name = Entry(root, width=30)
-f_name.grid(row=0, column=0, padx=20)
+f_name.grid(row=0, column=1, padx=20)
 
 l_name = Entry(root, width=30)
-l_name.grid(row=0, column=0, padx=20)
+l_name.grid(row=1, column=1, padx=20)
 
 address = Entry(root, width=30)
-address.grid(row=0, column=0, padx=20)
+address.grid(row=2, column=1, padx=20)
+
+f_name_label = Label(root, text="First Name")
+f_name_label.grid(row=0, column=0)
+
+l_name_label = Label(root, text="Last Name")
+l_name_label.grid(row=1, column=0)
+
+address_label = Label(root, text="Address")
+address_label.grid(row=2, column=0)
+
 
 conn.commit()
 conn.close()
