@@ -24,13 +24,21 @@ c = conn.cursor()
 
 #tables
 
-c.execute("""CREATE TABLE addresses (
-	first_name text,
-	last_name text,
-	zipcode integer
-)
-	""")
+# c.execute("""CREATE TABLE addresses (
+# 	first_name text,
+# 	last_name text,
+# 	zipcode integer
+# )
+# 	""")
 
+f_name = Entry(root, width=30)
+f_name.grid(row=0, column=0, padx=20)
+
+l_name = Entry(root, width=30)
+l_name.grid(row=0, column=0, padx=20)
+
+address = Entry(root, width=30)
+address.grid(row=0, column=0, padx=20)
 
 conn.commit()
 conn.close()
